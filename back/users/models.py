@@ -10,7 +10,7 @@ class users(AbstractUser):
     
     phone_number = models.CharField(max_length=20,blank=True)
     
-    email = models.EmailField(blank=True)
+    email = models.EmailField(blank=True,unique=True)
     
     biography = models.CharField(max_length=200,blank=True)
     
